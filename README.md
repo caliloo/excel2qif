@@ -12,7 +12,7 @@ Pour désinstaller, passez par la liste des programmes windows.
 
 # Utilisation
 Pour utiliser le logiciel, faites un clic droit sur un fichier excel (.xls), et choisissez convertir au format QIF.
-Vous pouvez essayer de faire cette action sur d'autres fichiers excel que ceux de ING, mais le résultat sera alors aléatoire (toutefois, votre pc ne devrait pas exploser).
+Vous pouvez essayer de faire cette action sur d'autres fichiers excel que ceux de ING, mais le résultat sera alors un fichier QIF au contenu aléatoire (toutefois, votre pc ne devrait pas exploser).
 
 # Documentation
 Cet outil créé un nouveau fichier avec le même nom, à l'exception de l'extension, qui est renommée en .qif. Le contenu est converti à la volée au format QIF. Si le fichier qif de destination existe déjà, il est alors écrasé par le nouveau fichier QIF.
