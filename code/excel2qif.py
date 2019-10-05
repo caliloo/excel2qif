@@ -29,7 +29,7 @@ args = parser.parse_args()
 
 
 
-full_path = args.file_path #'/media/sf_workshare/ing/2019 09 23 40003196132_20190823_20190923.xls'
+full_path = args.file_path
 
 book = xlrd.open_workbook(full_path)
 file_name = os.path.basename(full_path)
