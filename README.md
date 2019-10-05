@@ -3,8 +3,8 @@ Un petit outil pour convertir les fichiers Excel de INg au format QIF.
 
 
 # Installation
-Pour installer, utilisez l'installeur ici :
-https://github.com/caliloo/excel2qif/blob/master/installer/excel2qif.exe
+Pour faciliter les choses, utilisez l'installeur ici :
+https://github.com/caliloo/excel2qif/blob/master/installer/excel2qif.exe (sinon vous pouvez installer vous même python3.7 et utiliser la ligne de commande)
 
 (cliquez sur le lien et ensuite sur le bouton download)
 
@@ -19,3 +19,5 @@ Cet outil créé un nouveau fichier avec le même nom, à l'exception de l'exten
 
 Cet outil est fourni avec un installateur pour Windows, mais il devrait fonctioner sans problème sous toute machine capable de faire tourner Python3.7. Il fonctione pour moi (sous windows 10), j'espère qu'il fonctionera pour vous. Mais je ne fourni aucune garantie de fonctionnement correct. Vous utilisez cet outil sous votre propre responsabilité, ne lui accordez pas une confiance aveugle, gardez tout de même un oeil ouvert....
 
+# Support
+Je ne promet aucune réponse rapide ou même tout court, mais je vais regarder un peu cela pendant qqs jours, puis une ou deux fois par semaine. Utilisez svp l'interface de github pour faire remonter les problèmes (ou les choses positives, hein, ca fait plaisir aussi...).
