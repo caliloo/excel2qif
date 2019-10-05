@@ -11,6 +11,8 @@ https://github.com/caliloo/excel2qif/blob/master/installer/excel2qif.exe (sinon 
 Pour désinstaller, passez par la liste des programmes windows.
 
 # Utilisation
+Cet outil ne nécessite pas Microsoft Office.
+
 Pour utiliser le logiciel, faites un clic droit sur un fichier excel (.xls), et choisissez convertir au format QIF.
 Vous pouvez essayer de faire cette action sur d'autres fichiers excel que ceux de ING, mais le résultat sera alors un fichier QIF au contenu aléatoire (toutefois, votre pc ne devrait pas exploser).
 
