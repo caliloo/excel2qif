@@ -6,6 +6,8 @@ Un petit outil pour convertir les fichiers Excel de INg au format QIF.
 Pour installer, utilisez l'installeur ici :
 https://github.com/caliloo/excel2qif/blob/master/installer/excel2qif.exe
 
+(cliquez sur le lien et ensuite sur le bouton download)
+
 Pour désinstaller, passez par la liste des programmes windows.
 
 # Utilisation
