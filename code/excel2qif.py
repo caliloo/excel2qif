@@ -74,13 +74,14 @@ def do_soge(full_path):
     dest_fname = datetime.datetime.fromtimestamp(time.time()).strftime('%Y %m %d '+account_no + '.qif')
 
     fd = open(os.path.join(path, dest_fname), "w+")
+    fd.write("!Type:Bank\n")
     for l in lines[2:] :
         #exemple de ligne
         #25/11/2019;000001 VIR PERM POUR: VALENTINE CURTIT REF: 1000103251016 MOTIF: LIVRET A DE VALENT;-50,00;EUR;
         items = l.split(";")
-        fd.write(items[0])
+        fd.write("D%s\n" % items[0])
 
-        fd.write("T%s" % items[2])
+        fd.write("T%s\n" % items[2])
         fd.write("P%s\n" % items[1])
         fd.write("^\n")
 

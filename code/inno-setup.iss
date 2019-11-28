@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "Excel2qif"
-#define MyAppVersion "1.0"
+#define MyAppVersion "1.1"
 #define MyAppPublisher "CCCS"
 #define MyAppURL "https://github.com/caliloo/excel2qif"
 #define MyAppExeName "excel2qif.exe"
@@ -23,7 +23,7 @@ DefaultGroupName={#MyAppName}
 DisableProgramGroupPage=yes
 ; Uncomment the following line to run in non administrative install mode (install for current user only.)
 ;PrivilegesRequired=lowest
-OutputDir=C:\Users\charles\Desktop\WPy64-3741\work\installer
+OutputDir=C:\Users\charles\Desktop\workshare\excel2qif\installer
 OutputBaseFilename=excel2qif
 Compression=lzma
 SolidCompression=yes
@@ -33,7 +33,7 @@ WizardStyle=modern
 Name: "french"; MessagesFile: "compiler:Languages\French.isl"
 
 [Files]
-Source: "C:\Users\charles\Desktop\WPy64-3741\work\dist\excel2qif\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "C:\Users\charles\Desktop\workshare\excel2qif\code\dist\excel2qif\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Icons]
@@ -49,8 +49,11 @@ Name: "{group}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"
 
 
 ;Root: HKCR; Subkey: ".xls";                             ValueData: "{#MyAppName}";          Flags: uninsdeletevalue; ValueType: string;  ValueName: ""
-Root: HKCR; Subkey: "*\shell\{#MyAppName}"; ValueType: string;  ValueName: "";           ValueData: "Convertir en QIF";  Flags: uninsdeletekey  
-Root: HKCR; Subkey: "*\shell\{#MyAppName}"; ValueType: string;  ValueName: "AppliesTo" ; ValueData: """*.xls""";  Flags: uninsdeletekey
-Root: HKCR; Subkey: "*\shell\{#MyAppName}\command"; ValueType: string;  ValueName: "";           ValueData: """{app}\{#MyAppExeName}""" """%1""";  Flags: uninsdeletekey  
-
+Root: HKCR; Subkey: "*\shell\{#MyAppName}_xls"; ValueType: string;  ValueName: "";           ValueData: "Convertir en QIF";  Flags: uninsdeletekey  
+Root: HKCR; Subkey: "*\shell\{#MyAppName}_xls"; ValueType: string;  ValueName: "AppliesTo" ; ValueData: """*.xls""";  Flags: uninsdeletekey
+Root: HKCR; Subkey: "*\shell\{#MyAppName}_xls\command"; ValueType: string;  ValueName: "";           ValueData: """{app}\{#MyAppExeName}"" ""%1""";  Flags: uninsdeletekey  
+; c'est moche de se repeter, mais ca marche
+Root: HKCR; Subkey: "*\shell\{#MyAppName}_csv"; ValueType: string;  ValueName: "";           ValueData: "Convertir en QIF";  Flags: uninsdeletekey  
+Root: HKCR; Subkey: "*\shell\{#MyAppName}_csv"; ValueType: string;  ValueName: "AppliesTo" ; ValueData: """*.csv""";  Flags: uninsdeletekey
+Root: HKCR; Subkey: "*\shell\{#MyAppName}_csv\command"; ValueType: string;  ValueName: "";           ValueData: """{app}\{#MyAppExeName}"" ""%1""";  Flags: uninsdeletekey  
 

@@ -1,0 +1,7 @@
+with a winpy install, navigate to this dir, dont forget wlrd, pysintaller wont complain its not there
+pip install pysinstaller xlrd
+pysinstaller excel2qif.py 
+then
+pysinstaller excel2qif.spec
+
+then open inno-setup compiler, load the iss file and run the compile process

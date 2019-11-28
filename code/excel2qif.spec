@@ -4,7 +4,7 @@ block_cipher = None
 
 
 a = Analysis(['excel2qif.py'],
-             pathex=['C:\\Users\\charles\\Desktop\\WPy64-3741\\work'],
+             pathex=['C:\\Users\\charles\\Desktop\\workshare\\excel2qif\\code'],
              binaries=[],
              datas=[],
              hiddenimports=[],
@@ -19,15 +19,19 @@ pyz = PYZ(a.pure, a.zipped_data,
              cipher=block_cipher)
 exe = EXE(pyz,
           a.scripts,
-          a.binaries,
-          a.zipfiles,
-          a.datas,
           [],
+          exclude_binaries=True,
           name='excel2qif',
           debug=False,
           bootloader_ignore_signals=False,
           strip=False,
           upx=True,
-          upx_exclude=[],
-          runtime_tmpdir=None,
           console=True )
+coll = COLLECT(exe,
+               a.binaries,
+               a.zipfiles,
+               a.datas,
+               strip=False,
+               upx=True,
+               upx_exclude=[],
+               name='excel2qif')
